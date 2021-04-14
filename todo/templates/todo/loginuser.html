@@ -2,14 +2,14 @@
 
 {% block content %} 
 
-<h1>Sign Up</h1>
+<h1>Sign In</h1>
 
 <h3>{{ error }} </h3>
 
 <form method="POST">
 {% csrf_token %}
 {{ form.as_p }}
-<button type="submit">Signup</button>
+<button type="submit">Signin</button>
 </form>    
 
 {% endblock %}
